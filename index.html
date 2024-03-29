@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arbres remarquables</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Les arbres remarquables des Côtes-d'Armor</h1>
+        <div class="row">
+            <nav>
+                <aside class="col">
+                    <h2>Focus</h2>
+                    
+                    <article class="tree-focus"></article>
+                </aside>
+                <div class="deplacement">
+                    <button class="Btn"id="gauche">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" class="arrow"
+                            viewBox="0 0 32 32">
+                            <path
+                                d="M20.834 8.037L9.64 14.5c-1.43.824-1.43 2.175 0 3l11.194 6.463c1.43.826 2.598.15 2.598-1.5V9.537c0-1.65-1.17-2.326-2.598-1.5" />
+                        </svg>
+                    </button>
+                    <button class="Btn" id="droite">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" class="arrow"
+                            viewBox="0 0 32 32">
+                            <path
+                                d="M11.166 23.963L22.36 17.5c1.43-.824 1.43-2.175 0-3L11.165 8.037c-1.43-.826-2.598-.15-2.598 1.5v12.926c0 1.65 1.17 2.326 2.598 1.5z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="filter">
+                    <label for="essence">Trier par essence:</label>
+                    <select id="essence">
+                        <option value="all">Toutes les essences</option>
+                        <!-- Options pour chaque essence disponible -->
+                    </select>
+                </div>
+                
+            </nav>
+            <div id="map"></div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="app.js" type="module" defer></script>
+</body>
+
+</html>

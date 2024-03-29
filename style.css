@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+h1 {
+    color: #5f584f;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.row {
+    display: flex;
+    background-color: #618a78;
+    margin-bottom: 2rem;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.deplacement{
+    display: flex;
+    flex-direction: row;
+}
+aside {
+    width: 20%;
+    min-width: 240px;
+    padding: 0 20px;
+}
+
+.tree-focus {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+aside h2 {
+    color: white;
+}
+
+.tree-focus h3 {
+    margin: 0 0 0.25em;
+    text-transform: capitalize;
+}
+
+.tree-focus h4 {
+    margin: 0;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #5f584f;
+}
+
+.tree-focus p {
+    font-size: 0.875rem;
+}
+
+#map {
+    height: 600px;
+    width: 80%;
+}
+
+.leaflet-popup-content h3,
+.leaflet-popup-content p {
+    margin: 0;
+}
+.Btn {
+    width: 45px;
+    height: 45px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    margin: 10px 20px;
+  }
+  
+  
+  .arrow path {
+    fill: black;
+  }
+
+  
+  .Btn:hover .arrow {
+    animation: slide-in-bottom .7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  
+  @keyframes slide-in-bottom {
+    0% {
+      transform: translateY(10px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .filter {
+    margin-top: 1rem;
+    color: white;
+    text-align: center;
+}
+
+.filter label {
+    margin-right: 0.5rem;
+}
+
+.filter select {
+    padding: 0.5rem;
+}
